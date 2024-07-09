@@ -3,6 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteTodo } from "../feature/todo/todoSlice";
 
 function Todos() {
+  const todos = useSelector((state) => state.todos);
+  const dispatch = useDispatch();
+
   return (
     <>
       <ul className="list-none">
